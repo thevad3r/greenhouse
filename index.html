@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/vector/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Greenhouse</title>
+</head>
+<body id="n1">
+    <div class="hider"></div>
+    <div class="container">
+        <header class="header">
+            <img src="img/vector/logo-text.svg" alt="">
+            <nav class="nav">
+                <a href="#n1" class="nav__item">Home</a>
+                <a href="#n2" class="nav__item">Shop</a>
+                <a href="#n3" class="nav__item">Plant Care</a>
+            </nav>
+            <div class="header__buttons">
+                <div class="cart"><img src="img/vector/cart.svg" alt=""></div>
+                <div class="button button_little">
+                    <img src="img/vector/logout.svg" alt="">
+                    <p>Login</p>
+                </div>
+            </div>
+        </header>
+        <div class="burger-menu">
+            <img class="burger-menu__icon" src="img/vector/burger-gray.svg" alt="">
+            <div class="burger-menu__content">
+                <nav class="burger-menu__nav">
+                    <a href="#n1" class="nav__item">Home</a>
+                    <a href="#n2" class="nav__item">Shop</a>
+                    <a href="#n3" class="nav__item">Plant Care</a>
+                </nav>
+                <div class="burger-menu__buttons">
+                    <div class="cart"><img src="img/vector/cart.svg" alt=""></div>
+                    <div class="button button_little">
+                        <img src="img/vector/logout.svg" alt="">
+                        <p>Login</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section section_n1">
+            <div class="slider">
+                <div class="slider-line">
+                    <div class="slide">
+                        <div class="slide-text">
+                            <p class="slide-text__little-p">Welcome to Greenshop</p>
+                            <h1 class="slide-text__h1">Let’s make a better <span class="slide-text__h1 slide-text__h1_bold">planet</span></h1>
+                            <p class="slide-text__p">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+                            <a href="" class="slide-text__button button button_def"><p>Shop now</p></a>
+                        </div>
+                        <img  src="img/raster/lily.png" alt="" class="slide__img">
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <p class="slide-text__little-p">Welcome to Greenshop</p>
+                            <h1 class="slide-text__h1">Barberton <span class="slide-text__h1 slide-text__h1_bold">Daisy</span></h1>
+                            <p class="slide-text__p">An excellent air-purifying houseplant, according to NASA's 'Clean Air Study', conducted in 1989.</p>
+                            <a href="" class="slide-text__button button button_def"><p>Shop now</p></a>
+                        </div>
+                        <img  src="img/raster/daisy.png" alt="" class="slide__img" style="mix-blend-mode: multiply;">
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <p class="slide-text__little-p">Welcome to Greenshop</p>
+                            <h1 class="slide-text__h1">Blushing <span class="slide-text__h1 slide-text__h1_bold">Bromeliad</span></h1>
+                            <p class="slide-text__p">An epiphetic evergreen perennial that is native to tropical rain forests in southeastern Brazil.</p>
+                            <a href="" class="slide-text__button button button_def"><p>Shop now</p></a>
+                        </div>
+                        <img  src="img/raster/bromeliad.png" alt="" class="slide__img" style="mix-blend-mode: multiply;">
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <div class="slider-buttons__prev"><img src="img/vector/arrow-left-green.svg" alt=""></div>
+                    <div class="slider-buttons__status">
+                        <div class="slider-status-circle slider-status-circle_active" data-id="1"></div>
+                        <div class="slider-status-circle" data-id="2"></div>
+                        <div class="slider-status-circle" data-id="3"></div>
+                    </div>
+                    <div class="slider-buttons__next"><img src="img/vector/arrow-right-green.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_n2" id="n2">
+            <div class="filter">
+                <div class="filter__categories">
+                    <h3 class="filter__h3">Categories</h3>
+                    <div class="filter__list">
+                        <div class="filter__elem elem elem_active" data-filter-category="all">
+                            <p class="elem__name">All</p>
+                            <p class="elem__amount" data-id="amount_all-plants"></p>
+                        </div>
+                        <div class="filter__elem elem" data-filter-category="house-plant">
+                            <p class="elem__name">House Plants</p>
+                            <p class="elem__amount" data-id="amount_house-plants"></p>
+                        </div>
+                        <div class="filter__elem elem" data-filter-category="potted-plant">
+                            <p class="elem__name">Potted Plants</p>
+                            <p class="elem__amount" data-id="amount_potted-plants"></p>
+                        </div>
+                        <div class="filter__elem elem" data-filter-category="small-plant">
+                            <p class="elem__name">Small Plants</p>
+                            <p class="elem__amount" data-id="amount_small-plants"></p>
+                        </div>
+                        <div class="filter__elem elem" data-filter-category="big-plant">
+                            <p class="elem__name">Big Plants</p>
+                            <p class="elem__amount" data-id="amount_big-plants"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__filter-slider filter-slider">
+                    <h3 class="filter__h3">Price Range</h3>
+                    <div class="filter-slider__container">
+                        <div class="filter-slider__wrapper">
+                            <div class="filter-slider__slider-track"></div>
+                            <input type="range" min="" max="" value="" class="filter-slider__slider" data-id="slider-1">
+                            <input type="range" min="" max="" value="" class="filter-slider__slider" data-id="slider-2">
+                        </div>
+                        <div class="filter-slider__price-wrapper">
+                            <p class="filter-slider__price">Price:</p>
+                            <div class="filter-slider__from-to">
+                                <p class="filter-slider__dollar">$</p>
+                                <input type="number" value="" class="filter-slider__min">
+                                <p class="filter-slider__minus">-</p>
+                                <p class="filter-slider__dollar">$</p>
+                                <input type="number" value="" class="filter-slider__max">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogue">
+                <div class="catalogue__header">
+                    <div class="catalogue__tabs">
+                        <p class="catalogue__tab catalogue__tab_active" data-filter-category="all">All Plants</p>
+                        <p class="catalogue__tab" data-filter-category="new">New Arrivals</p>
+                        <p class="catalogue__tab" data-filter-category="sale">Sale</p>
+                    </div>
+                    <div class="catalogue__sorter sorter">
+                        <div class="sorter__text">
+                            <p>Sort by:</p>
+                            <p class="sorter__button">Default</p>
+                        </div>
+                        <div class="sorter__categories">
+                            <p class="sorter__category" data-id="default" style="display: none;">Default</p>
+                            <p class="sorter__category" data-id="low-to-high">Price: Low to High</p>
+                            <p class="sorter__category" data-id="high-to-low">Price: High to Low</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__grid">
+                    <div class="catalogue__item item house-plant potted-plant small-plant" data-id="1">
+                        <div class="item__img"><img src="img/raster/daisy.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Barberton Daisy</p>
+                            <p class="item__price">$119.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item house-plant big-plant" data-id="2">
+                        <div class="item__img"><img src="img/raster/angel-wing.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Angel Wing Begonia</p>
+                            <p class="item__price">$169.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item sale big-plant" data-id="3">
+                        <p class="item__sale-badge"></p>
+                        <div class="item__img"><img src="img/raster/violet.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">African Violet</p>
+                            <div class="item__before-after">
+                                <p class="item__price">$199.00</p>
+                                <p class="item__price-before">$229.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item new house-plant big-plant" data-id="4">
+                        <div class="item__img"><img src="img/raster/lily.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Beach Spider Lily</p>
+                            <p class="item__price">$129.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item new big-plant" data-id="5">
+                        <div class="item__img"><img src="img/raster/bromeliad.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Blushing Bromeliad</p>
+                            <p class="item__price">$139.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item new big-plant" data-id="6">
+                        <div class="item__img"><img src="img/raster/aluminium.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Aluminum Plant</p>
+                            <p class="item__price">$179.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item big-plant" data-id="7">
+                        <div class="item__img"><img src="img/raster/fern.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Bird's Nest Fern</p>
+                            <p class="item__price">$99.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item house-plant potted-plant small-plant" data-id="8">
+                        <div class="item__img"><img src="img/raster/lady-palm.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Broadleaf Lady Palm</p>
+                            <p class="item__price">$59.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogue__item item sale house-plant small-plant" data-id="9">
+                        <p class="item__sale-badge"></p>
+                        <div class="item__img"><img src="img/raster/evergreen.png" alt=""></div>
+                        <div class="item__text">
+                            <p class="item__name">Chinese Evergreen</p>
+                            <div class="item__before-after">
+                                <p class="item__price">$39.00</p>
+                                <p class="item__price-before">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_n3">
+            <div class="trend-item">
+                <img src="img/raster/bromeliad.png" alt="" class="trend-item__img">
+                <div class="trend-item-text">
+                    <h2 class="trend-item-text__h2">Summer cactus
+                        & succulents</h2>
+                    <p class="trend-item-text__p">Excellent air-purifying houseplants</p>
+                    <div class="trend-item-text__button button button_def"><p>Find More</p><img src="img/vector/arrow-right.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="trend-item">
+                <img src="img/raster/violet.png" alt="" class="trend-item__img">
+                <div class="trend-item-text">
+                    <h2 class="trend-item-text__h2">Styling Trends
+                        & much more</h2>
+                    <p class="trend-item-text__p">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                    <div class="trend-item-text__button button button_def"><p>Find More</p><img src="img/vector/arrow-right.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="n3">
+            <div class="footer__plant-care">
+                <div class="plant-care-container">
+                    <div class="plant-care-item">
+                        <img src="img/raster/green-icon-1.png" alt="" class="plant-care-item__img">
+                        <h3 class="plant-care-item__h3">Water properly</h3>
+                        <p class="plant-care-item__p">Only water as often as necessary during the growing season for your specific plant species.</p>
+                    </div>
+                    <div class="plant-care-item">
+                        <img src="img/raster/green-icon-2.png" alt="" class="plant-care-item__img">
+                        <h3 class="plant-care-item__h3">Check the health</h3>
+                        <p class="plant-care-item__p">Fully inspect your garden plants to make sure they are pest and rot free.</p>
+                    </div>
+                    <div class="plant-care-item">
+                        <img src="img/raster/green-icon-3.png" alt="" class="plant-care-item__img">
+                        <h3 class="plant-care-item__h3">Destroy the weeds</h3>
+                        <p class="plant-care-item__p">Weeds can suffocate the roots of your healthy plants, harbor pests, and become an unsightly nuisance.</p>
+                    </div>
+                </div>
+                <div class="newsletters">
+                    <h3 class="newsletters__h3">Would you like to join newsletters?</h3>
+                    <div class="newsletters__email-container">
+                        <input type="email" placeholder="Email" name="" id="" class="newsletters__email">
+                        <div class="newsletters__button button button_def"><p>Join</p></div>
+                    </div>
+                    <p class="newsletters__p">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our greenhouse to yours!</p>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <img src="img/vector/logo-text.svg" alt="">
+                <div class="contacts__p">
+                    <img src="img/vector/location.svg" alt="">
+                    <p>70 West Buckingham Ave. Farmingdale, NY 11735</p>
+                </div>
+                <div class="contacts__p">
+                    <img src="img/vector/message.svg" alt="">
+                    <p>contact@greenshop.com</p></div>
+                <div class="contacts__p">
+                    <img src="img/vector/calling.svg" alt="">
+                    <p>+88 01911 717 490</p>
+                    </div>
+            </div>
+            <div class="footer__faq">
+                <div class="faq__menu">
+                    <h3 class="menu__h3">My Account</h3>
+                    <p class="menu__p">My Account</p>
+                    <p class="menu__p">Our stores</p>
+                    <p class="menu__p">Contact us</p>
+                    <p class="menu__p">Career</p>
+                    <p class="menu__p">Specials</p>
+                </div>
+                <div class="faq__menu">
+                    <h3 class="menu__h3">Help & Guide</h3>
+                    <p class="menu__p">Help Center</p>
+                    <p class="menu__p">How to Buy</p>
+                    <p class="menu__p">Shipping & Delivery</p>
+                    <p class="menu__p">Product Policy</p>
+                    <p class="menu__p">How to Return</p>
+                </div>
+                <div class="faq__menu">
+                    <h3 class="menu__h3">Categories</h3>
+                    <p class="menu__p">House Plants</p>
+                    <p class="menu__p">Potted Plants</p>
+                    <p class="menu__p">Seeds</p>
+                    <p class="menu__p">Small Plants</p>
+                    <p class="menu__p">Accessories</p>
+                </div>
+                <div class="faq__menu">
+                    <h3 class="menu__h3">Social Media</h3>
+                    <div class="faq__icons">
+                        <a href=""><img src="img/vector/fb.svg" alt="" class="menu__icon"></a>
+                        <a href=""><img src="img/vector/ig.svg" alt="" class="menu__icon"></a>
+                        <a href=""><img src="img/vector/tw.svg" alt="" class="menu__icon"></a>
+                        <a href=""><img src="img/vector/in.svg" alt="" class="menu__icon"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">© 2023 Greenshop. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
